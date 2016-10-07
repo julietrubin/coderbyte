@@ -17,8 +17,9 @@
 
 
 function GetTraffic(startCity, connectingCity, cityDict){
-		// At the end of this function pathArray will contain all the nodes that lead to startCity through ConnectingCity
+    // At the end of this function pathArray will contain all the nodes that lead to startCity through ConnectingCity
     var pathArray = cityDict[connectingCity].slice();
+    // remove the startCity from the path
     pathArray.splice( pathArray.indexOf(startCity), 1 );
     pathArray.push(connectingCity)
 
