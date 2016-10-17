@@ -3,7 +3,7 @@
 // otherwise return the string false. For example: if str1 is "rkqodlw" and str2 is "world" 
 // the output should return true. Punctuation and symbols will not be entered with the parameters. 
 
-function StringScramble(str1,str2) { 
+function stringScramble(str1,str2) { 
   for (var i=0; i < str2.length; i++){
       character = str2[i] 
       
@@ -16,4 +16,4 @@ function StringScramble(str1,str2) {
 }
    
 // keep this function call here 
-StringScramble(readline());
+stringScramble(readline());
